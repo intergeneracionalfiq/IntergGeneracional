@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InterGeneracional — Conectamos generaciones, creamos experiencias</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="demo-banner">Prototipo académico demostrativo · Todos los datos, nombres, teléfonos y estadísticas son ficticios</div>
+
+<header class="header">
+  <div class="container nav-wrap">
+    <a href="#inicio" class="logo"><span class="logo-mark">iG</span> InterGeneracional</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#talleres">Explorar talleres</a>
+      <a href="#instituciones">Para instituciones</a>
+      <a href="#talleristas">Talleristas</a>
+      <a href="#calidad">Calidad y confianza</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 5.1 INICIO -->
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Talleres y actividades para adultos mayores · Santa Fe</p>
+        <h1>Conectamos generaciones, creamos experiencias.</h1>
+        <p class="lead">Conectamos instituciones, talleristas y adultos mayores para generar experiencias de aprendizaje, creatividad y bienestar.</p>
+        <div class="btn-row">
+          <a href="#instituciones" class="btn btn-primary">Soy una institución</a>
+          <a href="#talleres" class="btn btn-outline">Quiero explorar talleres</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/images/hero.jpg" alt="Una joven y una mujer mayor miran juntas una tablet en un centro comunitario" width="1200" height="900" fetchpriority="high">
+        <figcaption class="hero-tags" aria-hidden="true"><span>📱 Tecnología</span><span>🎨 Arte</span><span>🧘 Bienestar</span><span>📚 Cultura</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="intro">
+        <h2>¿Qué es InterGeneracional?</h2>
+        <p>Somos una plataforma de <strong>intermediación y gestión de talleres</strong>. No somos un directorio de profesores: <strong>seleccionamos, coordinamos y hacemos seguimiento</strong> de cada actividad para que las instituciones ofrezcan experiencias de calidad a sus residentes y asistentes.</p>
+      </div>
+      <div class="grid-3">
+        <div class="benefit"><div class="icon">✅</div><h3>Talleristas verificados</h3><p>Evaluamos perfiles, antecedentes y experiencia antes de incorporar a cada tallerista.</p></div>
+        <div class="benefit"><div class="icon">🗂️</div><h3>Gestión integral</h3><p>Nos ocupamos de la búsqueda, contratación y coordinación. La institución se libera de esa carga.</p></div>
+        <div class="benefit"><div class="icon">⭐</div><h3>Calidad medida</h3><p>Encuestamos a participantes e instituciones y registramos el desempeño de cada taller.</p></div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><strong>15</strong><span>instituciones asociadas</span></div>
+        <div class="stat"><strong>32</strong><span>talleristas verificados</span></div>
+        <div class="stat"><strong>48</strong><span>talleres realizados</span></div>
+        <div class="stat"><strong>94%</strong><span>satisfacción promedio</span></div>
+      </div>
+      <p class="demo-note">* Cifras ilustrativas del prototipo. No representan resultados reales.</p>
+
+      <div class="section-head">
+        <h2>Talleres destacados</h2>
+        <a href="#talleres" class="link-more">Ver todos →</a>
+      </div>
+      <div class="cards" id="featured"></div>
+    </div>
+  </section>
+
+  <!-- 5.2 CÓMO FUNCIONA -->
+  <section id="como-funciona" class="section alt">
+    <div class="container">
+      <h2 class="center">Cómo funciona</h2>
+      <p class="center sub">Un modelo que conecta a tres actores, con InterGeneracional gestionando la calidad en el centro.</p>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="inst">🏛️ Instituciones</button>
+        <button class="tab" data-tab="tall">🧑‍🏫 Talleristas</button>
+        <button class="tab" data-tab="part">👵 Participantes</button>
+      </div>
+      <div class="tab-panel active" id="tab-inst">
+        <ol class="steps">
+          <li><span>1</span>La institución se contacta con InterGeneracional.</li>
+          <li><span>2</span>Explora las propuestas disponibles o solicita un taller personalizado.</li>
+          <li><span>3</span>InterGeneracional selecciona y coordina al tallerista adecuado.</li>
+          <li><span>4</span>Se realiza la actividad.</li>
+          <li><span>5</span>Se evalúa la satisfacción y se registra el desempeño.</li>
+        </ol>
+      </div>
+      <div class="tab-panel" id="tab-tall">
+        <ol class="steps">
+          <li><span>1</span>Se postulan para formar parte de la red.</li>
+          <li><span>2</span>InterGeneracional evalúa su perfil y experiencia.</li>
+          <li><span>3</span>Se incorporan a la cartera de talleristas asociados.</li>
+          <li><span>4</span>Reciben oportunidades de dictar talleres.</li>
+          <li><span>5</span>Su desempeño es evaluado y registrado.</li>
+        </ol>
+      </div>
+      <div class="tab-panel" id="tab-part">
+        <ol class="steps steps-3">
+          <li><span>1</span>Consultan las actividades disponibles en su zona.</li>
+          <li><span>2</span>Conocen sus características, fechas y ubicación.</li>
+          <li><span>3</span>Se comunican con el organizador mediante los datos de contacto publicados.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5.3 EXPLORAR TALLERES -->
+  <section id="talleres" class="section">
+    <div class="container">
+      <h2>Explorar talleres</h2>
+      <p class="sub">Actividades presenciales en distintos barrios de Santa Fe capital.</p>
+      <div class="filters">
+        <input type="search" id="fSearch" placeholder="🔍 Buscar por nombre de taller…" aria-label="Buscar taller">
+        <select id="fCat" aria-label="Categoría"><option value="">Todas las categorías</option></select>
+        <select id="fBarrio" aria-label="Barrio"><option value="">Todos los barrios</option></select>
+        <select id="fMod" aria-label="Modalidad"><option value="">Todas las modalidades</option><option>Presencial</option></select>
+        <label class="check"><input type="checkbox" id="fProx"> Próximos a comenzar (14 días desde el 06/11/2026)</label>
+        <button class="btn btn-small btn-ghost" id="fReset">Limpiar</button>
+      </div>
+      <p class="results" id="results"></p>
+      <div class="cards" id="catalog"></div>
+    </div>
+  </section>
+
+  <!-- 5.4 PARA INSTITUCIONES -->
+  <section id="instituciones" class="section alt inst">
+    <div class="container">
+      <p class="eyebrow">Para instituciones</p>
+      <h2>Actividades que enriquecen la experiencia de tu institución.</h2>
+      <p class="lead">InterGeneracional se ocupa de <strong>encontrar, seleccionar y coordinar</strong> talleristas para implementar actividades en centros de día, residencias, centros culturales, clubes y otras organizaciones.</p>
+      <img class="section-photo" src="assets/images/instituciones.jpg" alt="Coordinadora de InterGeneracional conversa con el personal de un centro de día mientras adultos mayores realizan manualidades" loading="lazy" width="1600" height="900">
+      <div class="grid-3">
+        <div class="benefit"><div class="icon">👥</div><h3>Cartera de talleristas</h3><p>Acceso a una red de profesionales verificados en múltiples disciplinas.</p></div>
+        <div class="benefit"><div class="icon">🎯</div><h3>Actividades adaptadas</h3><p>Propuestas pensadas para las características de tus participantes.</p></div>
+        <div class="benefit"><div class="icon">📋</div><h3>Menos carga administrativa</h3><p>Nosotros gestionamos la búsqueda y la coordinación.</p></div>
+        <div class="benefit"><div class="icon">🔄</div><h3>Coordinación y seguimiento</h3><p>Acompañamos cada actividad de principio a fin.</p></div>
+        <div class="benefit"><div class="icon">📊</div><h3>Evaluación de satisfacción</h3><p>Recibís informes con la opinión de participantes.</p></div>
+        <div class="benefit"><div class="icon">📅</div><h3>Programas continuos</h3><p>Armamos ciclos anuales de actividades a medida.</p></div>
+      </div>
+      <h3 class="mt">Instituciones asociadas (ficticias)</h3>
+      <div class="inst-list" id="instList"></div>
+      <div class="center mt">
+        <button class="btn btn-primary btn-big" data-open="formInst">Solicitar información para mi institución</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5.5 TALLERISTAS -->
+  <section id="talleristas" class="section">
+    <div class="container">
+      <h2>Nuestra cartera de talleristas</h2>
+      <p class="sub">Cada perfil es evaluado y su desempeño se registra taller a taller. Hacé clic en un perfil para ver su ficha completa.</p>
+      <div class="cards" id="tallerList"></div>
+      <div class="cta-box">
+        <div>
+          <h3>¿Querés sumarte como tallerista?</h3>
+          <p>Si tenés conocimientos o experiencia para compartir, postulate y evaluaremos tu perfil.</p>
+        </div>
+        <button class="btn btn-accent" data-open="formTall">Postularme</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5.6 CALIDAD -->
+  <section id="calidad" class="section alt">
+    <div class="container">
+      <p class="eyebrow">Calidad y confianza</p>
+      <h2>La calidad no se improvisa. La acompañamos.</h2>
+      <p class="lead">Hacemos seguimiento de cada taller y de sus responsables. No es solo un sistema de calificaciones: es un mecanismo de control de calidad.</p>
+      <div class="pillars">
+        <div class="pillar"><span class="pnum">1</span><div class="icon">🔎</div><h3>Selección</h3><p>Evaluación de perfiles, antecedentes y experiencia de los talleristas.</p></div>
+        <div class="pillar"><span class="pnum">2</span><div class="icon">📝</div><h3>Seguimiento</h3><p>Registro de talleres realizados y cumplimiento de las actividades.</p></div>
+        <div class="pillar"><span class="pnum">3</span><div class="icon">💬</div><h3>Satisfacción</h3><p>Encuestas a participantes e instituciones.</p></div>
+        <div class="pillar"><span class="pnum">4</span><div class="icon">📈</div><h3>Mejora continua</h3><p>Usamos las evaluaciones para mejorar la oferta y seleccionar los mejores perfiles.</p></div>
+      </div>
+      <div class="eval-wrap">
+      <img class="eval-photo" src="assets/images/calidad.jpg" alt="Un tallerista escucha con atención la opinión de un participante sobre el taller" loading="lazy" width="1200" height="900">
+      <div class="eval-card">
+        <div class="eval-head">
+          <span class="badge">Ficha de evaluación · ejemplo</span>
+          <h3>Taller: Tu celular, tus posibilidades</h3>
+          <p>Tallerista: Lucía Fernández · Centro de Día Los Aromos</p>
+        </div>
+        <div class="eval-rows">
+          <div class="eval-row"><span>Satisfacción general</span><div class="bar"><i style="width:98%"></i></div><b>4,9/5</b></div>
+          <div class="eval-row"><span>Claridad de las explicaciones</span><div class="bar"><i style="width:100%"></i></div><b>5/5</b></div>
+          <div class="eval-row"><span>Trato y predisposición</span><div class="bar"><i style="width:100%"></i></div><b>5/5</b></div>
+          <div class="eval-row"><span>Organización</span><div class="bar"><i style="width:96%"></i></div><b>4,8/5</b></div>
+        </div>
+        <blockquote>“Lucía tuvo mucha paciencia y nos enseñó cosas que ahora usamos todos los días”.<cite>— Participante (comentario ficticio)</cite></blockquote>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5.7 ESPACIOS (secundaria) -->
+  <section id="espacios" class="section small-section">
+    <div class="container">
+      <h2 class="h-small">Espacios disponibles</h2>
+      <p class="sub">Las instituciones con instalaciones disponibles pueden ofrecerlas para actividades. Nosotros las conectamos con talleristas y participantes interesados.</p>
+      <div class="spaces" id="spaceList"></div>
+      <button class="btn btn-outline btn-small mt" data-open="formSpace">Ofrecer un espacio</button>
+    </div>
+  </section>
+
+  <!-- 5.8 CONTACTO -->
+  <section id="contacto" class="section alt">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contacto</h2>
+        <p class="sub">Escribinos y te respondemos a la brevedad.</p>
+        <ul class="contact-info">
+          <li>📞 (0342) 455-0000 <small>(teléfono demostrativo)</small></li>
+          <li>✉️ hola@intergeneracional.demo <small>(correo ficticio)</small></li>
+          <li>📍 Santa Fe capital, Argentina</li>
+        </ul>
+      </div>
+      <form class="form card-form" data-form="Contacto">
+        <label>Nombre y apellido<input required name="nombre"></label>
+        <label>Correo electrónico<input type="email" required name="email"></label>
+        <label>Mensaje<textarea rows="4" required name="mensaje"></textarea></label>
+        <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#inicio" class="logo light"><span class="logo-mark">iG</span> InterGeneracional</a>
+      <p>Gestionamos experiencias de calidad que promueven el aprendizaje, el bienestar y el encuentro entre generaciones.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#inicio">Inicio</a><a href="#como-funciona">Cómo funciona</a><a href="#talleres">Explorar talleres</a>
+      <a href="#instituciones">Para instituciones</a><a href="#talleristas">Talleristas</a><a href="#calidad">Calidad y confianza</a>
+      <a href="#espacios">Espacios disponibles</a><a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+  <p class="footer-legal">Prototipo de baja fidelidad con fines académicos · Datos ficticios · 2026</p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<!-- Formularios (plantillas) -->
+<template id="formInst">
+  <h2>Solicitar información para mi institución</h2>
+  <p class="sub">Formulario demostrativo: no se envía información real.</p>
+  <form class="form" data-form="Institución">
+    <label>Nombre de la institución<input required></label>
+    <label>Tipo de institución
+      <select required><option value="">Seleccioná…</option><option>Centro de día</option><option>Residencia geriátrica</option><option>Centro cultural</option><option>Club</option><option>Otra organización</option></select>
+    </label>
+    <div class="form-2">
+      <label>Persona de contacto<input required></label>
+      <label>Teléfono<input type="tel" required></label>
+    </div>
+    <label>Correo electrónico<input type="email" required></label>
+    <fieldset><legend>¿Qué tipo de actividades le interesan?</legend>
+      <label class="check"><input type="checkbox"> Tecnología y alfabetización digital</label>
+      <label class="check"><input type="checkbox"> Arte y creatividad</label>
+      <label class="check"><input type="checkbox"> Bienestar y actividad física</label>
+      <label class="check"><input type="checkbox"> Cultura y aprendizaje</label>
+    </fieldset>
+    <label>Mensaje adicional<textarea rows="3"></textarea></label>
+    <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+  </form>
+</template>
+
+<template id="formTall">
+  <h2>Postulación de talleristas</h2>
+  <p class="sub">Formulario demostrativo: no se envía información real.</p>
+  <form class="form" data-form="Tallerista">
+    <div class="form-2">
+      <label>Nombre y apellido<input required></label>
+      <label>Teléfono<input type="tel" required></label>
+    </div>
+    <label>Correo electrónico<input type="email" required></label>
+    <label>Especialidad
+      <select required><option value="">Seleccioná…</option><option>Tecnología</option><option>Arte y creatividad</option><option>Bienestar y actividad física</option><option>Cultura y aprendizaje</option><option>Otra</option></select>
+    </label>
+    <label>Formación y experiencia<textarea rows="3" required></textarea></label>
+    <label>Propuesta de taller<textarea rows="3"></textarea></label>
+    <button class="btn btn-accent" type="submit">Enviar postulación</button>
+  </form>
+</template>
+
+<template id="formSpace">
+  <h2>Ofrecer un espacio</h2>
+  <p class="sub">Formulario demostrativo: no se envía información real.</p>
+  <form class="form" data-form="Espacio">
+    <label>Institución<input required></label>
+    <div class="form-2">
+      <label>Barrio<input required></label>
+      <label>Capacidad (personas)<input type="number" min="1" required></label>
+    </div>
+    <label>Características del espacio<textarea rows="2"></textarea></label>
+    <label>Disponibilidad<input placeholder="Ej.: mañanas de lunes a viernes" required></label>
+    <label>Correo de contacto<input type="email" required></label>
+    <button class="btn btn-primary" type="submit">Enviar oferta</button>
+  </form>
+</template>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
